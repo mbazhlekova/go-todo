@@ -14,7 +14,7 @@ func main() {
 	api := app.Group("/api")
 
 	api.Get("/", func(c *fiber.Ctx) error {
-		return c.SendString("App Running")
+		return c.SendString("App Running test")
 	})
 
 	log.Fatal(app.Listen(":5000"))
